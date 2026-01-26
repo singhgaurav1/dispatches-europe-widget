@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatches Europe - AI Search Widget</title>
+    <link rel="stylesheet" href="widget.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Dispatches Europe AI Search Widget -->
+        <div class="dispatches-europe-widget" id="dispatches-europe-widget">
+            <!-- Header -->
+            <div class="widget-header">
+                <div class="brand">
+                    <div class="brand-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Globe -->
+                            <circle cx="20" cy="24" r="14" stroke="#1a73e8" stroke-width="2" fill="none"/>
+                            <ellipse cx="20" cy="24" rx="6" ry="14" stroke="#1a73e8" stroke-width="1.5" fill="none"/>
+                            <path d="M6 24h28" stroke="#1a73e8" stroke-width="1.5"/>
+                            <path d="M10 16h20M10 32h20" stroke="#1a73e8" stroke-width="1"/>
+                            <!-- Airplane -->
+                            <g transform="translate(24, 8) rotate(30)">
+                                <path d="M0 8L16 4L14 6L18 8L14 10L16 12L0 8Z" fill="#34a853"/>
+                                <path d="M4 8L0 6V10L4 8Z" fill="#34a853"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h1 class="brand-name">Dispatches Europe</h1>
+                </div>
+                <p class="tagline">Navigating your expat journey to Europe</p>
+            </div>
+
+            <!-- AI Suggestions -->
+            <div class="suggestions-section">
+                <p class="suggestions-label">Ask our AI about</p>
+                <div class="suggestion-chips">
+                    <button class="chip" data-query="Finding housing in Berlin">Finding housing in Berlin</button>
+                    <button class="chip" data-query="EU visa requirements">EU visa requirements</button>
+                    <button class="chip" data-query="Healthcare access for expats">Healthcare access for expats</button>
+                    <button class="chip" data-query="Opening a bank account">Opening a bank account</button>
+                    <button class="chip" data-query="Language learning resources">Language learning resources</button>
+                    <button class="chip" data-query="Job opportunities in tech">Job opportunities in tech</button>
+                    <button class="chip" data-query="International schools">International schools</button>
+                    <button class="chip" data-query="Tax implications">Tax implications</button>
+                </div>
+            </div>
+
+            <!-- Search Box -->
+            <div class="search-section">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="search-input"
+                        placeholder="Start your journey here..."
+                        autocomplete="off"
+                    >
+                    <button class="search-button" id="search-button" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Trending Articles -->
+            <div class="trending-section">
+                <p class="trending-label">Trending articles</p>
+                <div class="trending-wrapper">
+                    <div class="trending-track" id="trending-track">
+                        <!-- Articles will be duplicated for infinite scroll -->
+                        <article class="trending-card">
+                            <span class="card-category category-work">Remote Work</span>
+                            <h3 class="card-title">Working Remotely in Europe: Visa Requirements and Best Destinations</h3>
+                        </article>
+                        <article class="trending-card">
+                            <span class="card-category category-healthcare">Healthcare</span>
+                            <h3 class="card-title">Healthcare Systems Comparison: US vs. European Countries</h3>
+                        </article>
+                        <article class="trending-card">
+                            <span class="card-category category-finance">Finance</span>
+                            <h3 class="card-title">Opening a European Bank Account as an Expat: Complete Guide</h3>
+                        </article>
+                        <article class="trending-card">
+                            <span class="card-category category-housing">Housing</span>
+                            <h3 class="card-title">Finding Affordable Housing in Major European Cities</h3>
+                        </article>
+                        <article class="trending-card">
+                            <span class="card-category category-visa">Visa & Legal</span>
+                            <h3 class="card-title">EU Blue Card vs. National Visa: Which is Right for You?</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="widget.js"></script>
+</body>
+</html>
+
+
